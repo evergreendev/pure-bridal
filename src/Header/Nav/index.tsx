@@ -5,8 +5,6 @@ import React from 'react'
 import type { Header as HeaderType } from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
-import Link from 'next/link'
-import { SearchIcon } from 'lucide-react'
 
 export const HeaderNav: React.FC<{ header: HeaderType, centerNav:boolean }> = ({ header }) => {
   const navItems = header?.navItems || []
@@ -14,12 +12,8 @@ export const HeaderNav: React.FC<{ header: HeaderType, centerNav:boolean }> = ({
   return (
     <nav className="flex gap-3 items-center mx-auto">
       {navItems.map(({ link }, i) => {
-        return <CMSLink key={i} {...link} appearance="link" className="text-2xl uppercase" />
+        return <CMSLink key={i} {...link} appearance="link" className="text-lg uppercase text-brand-primary" />
       })}
-      <Link href="/search">
-        <span className="sr-only">Search</span>
-        <SearchIcon className="w-5 text-primary" />
-      </Link>
     </nav>
   )
 }

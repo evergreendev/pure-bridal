@@ -46,7 +46,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({
   return (
     <>
       <header
-        className={`hidden md:block sticky transition-colors top-0 z-50 ${!centerNav || hasScrolled ? 'bg-brand-blue text-white border-b border-blue-950' : ''}`}
+        className={`hidden md:block sticky transition-colors top-0 z-50 ${!centerNav || hasScrolled ? 'bg-brand-linen text-brand-primary border-b border-brand-primary' : ''}`}
         {...(theme ? { 'data-theme': theme } : {})}
       >
         <div className="container relative z-20 py-2 flex justify-between text-3xl ">

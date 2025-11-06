@@ -53,16 +53,26 @@ export default {
       },
       colors: {
         brand: {
-          primary: "#5a86ad",
-          secondary: "#94bde2",
-          accent: "#bba53d",
-          pink: "#e0bba2",
-          green1: "#d2d6a9",
-          green2: "#b6b48c",
-          red: '#af3827',
-          redPale: '#dda898',
-          blue: '#304050',
-          blueBright: '#24418f'
+          // New palette (aliases)
+          main: '#083b0d',
+          sand: '#B3AF88',
+          sky: '#85AFD4',
+          terracotta: '#B78470',
+          deep: '#092315',
+          linen: '#EDE3DE',
+          gold: '#E7BA58',
+
+          // Backward-compatible keys mapped to the new palette
+          primary: '#083b0d',      // main
+          secondary: '#85AFD4',    // sky
+          accent: '#E7BA58',       // gold
+          pink: '#EDE3DE',         // linen
+          green1: '#B3AF88',       // sand
+          green2: '#092315',       // deep (dark tone)
+          red: '#B78470',          // terracotta (warm)
+          redPale: '#E7BA58',      // gold as pale/warm accent
+          blue: '#85AFD4',         // sky
+          blueBright: '#85AFD4',   // same as sky
         },
         accent: {
           DEFAULT: 'hsl(var(--accent))',

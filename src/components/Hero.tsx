@@ -51,7 +51,7 @@ const Hero = ({ images, logo }: HeroProps) => {
             )
         })}
       </div>
-      <div className="bg-brand-primary w-full md:w-8/12 z-20 overflow-hidden shadow flex flex-col justify-center items-center">
+      <div className="bg-brand-linen w-full md:w-8/12 z-20 overflow-hidden shadow flex flex-col justify-center items-center">
         <div className="p-8">
           {logo && typeof logo !== 'number' && 'id' in logo && (
             <Link href="/">
@@ -66,7 +66,7 @@ const Hero = ({ images, logo }: HeroProps) => {
           )}
         </div>
 
-        <div className="bg-brand-secondary w-full p-8 text-center flex flex-col items-center gap-3 mb-12">
+        <div className="bg-brand-sand w-full p-8 text-center flex flex-col items-center gap-3 mb-12">
           <div>
             <p>browse our dress brands</p>
             <Button variant="outline">View Brands</Button>

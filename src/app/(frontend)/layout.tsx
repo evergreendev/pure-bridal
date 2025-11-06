@@ -13,6 +13,7 @@ import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
 import { draftMode } from 'next/headers'
 import {GoogleAnalytics} from '@next/third-parties/google'
 import './globals.css'
+import { Header } from '@/Header/Component'
 
 const playball = Playball({
   subsets:['latin'],
@@ -44,6 +45,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             }}
           />
           <LivePreviewListener />
+          <Header centerNav={false} />
           {children}
           <Footer />
       </body>
