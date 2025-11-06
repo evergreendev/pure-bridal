@@ -2,6 +2,7 @@ import { CollectionSlug } from 'payload'
 
 const collectionPrefixMap: Partial<Record<CollectionSlug, string>> = {
   pages: '',
+  'real-brides': 'real-brides',
 }
 
 type Props = {
